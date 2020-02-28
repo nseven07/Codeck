@@ -23,7 +23,9 @@
     "gulp-twig": "^1.2.0",
     "gulp-uglify-es": "^2.0.0",
     "i": "^0.3.6",
-    "postcss": "^7.0.26"
+    "postcss": "^7.0.26",
+    "clean-css": "^4.1.11",
+    "lodash.template": "^4.5.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
