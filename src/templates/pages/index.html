@@ -2,11 +2,15 @@
 
 {% block content %}
 
+
 <div class="container-fluid mt-3">
     <div class="row">
-        <img class="col-2" src="../assets/img/codeck.svg" alt="">
-        <div class="offset-9"></div>
-        <div class="col-1">
+        <div class="col-4 col-lg-2">
+            <img  src="../assets/img/codeck.svg" alt="">
+        </div>
+
+        <div class="col-2">
+
             <img src="../assets/img/facebook.png" alt="">
             <img src="../assets/img/instagram.png" alt="">
             <img src="../assets/img/linkedin.png" alt="">
@@ -14,16 +18,14 @@
     </div>
     <div class="row" style="height: 100px"></div>
     <div class="row">
-        <p id="title-text" class="col-7">Markanız için<br>Unutulmaz <span id="title-text-span">Deneyimler</span> Hazırlar </p>
+        <p id="title-text" class="col-12 col-lg-7 text-center text-lg-left">Markanız için<br>Unutulmaz <span id="title-text-span">Deneyimler</span> Hazırlar </p>
         <div class="offset-7"></div>
     </div>
-
     <div class="row" style="height: 150px"></div>
     <div id="boyBackground" class="row" style="height: 100px;">
-        <div class="offset-7"></div>
-        <div class="col-5 position-absolute" id="boyColumn">
+        <div class="offset-lg-7"></div>
+        <div class="col-12 col-lg-5  position-absolute" id="boyColumn">
         </div>
-
     </div>
     <div class="row" style="height: 300px;background: #E22000;position: relative;">
         <div class="col-5">
@@ -35,43 +37,41 @@
                     <p id="buttonText" class="pt-3 pl-3">Şirket Sunumumuzu İncele</p>
                 </div>
             </a>
-            <div class="main">
+            <div class="main d-none d-lg-block">
                 <p class="comInfo">İLETİŞİM BİLGİLERİMİZ</p>
                 <div class="stick"></div>
             </div>
         </div>
-
         <div class="container-fluid" id="bottomColor"></div>
         <img id="boyImage" src="../assets/img/boy.png" alt=""></div>
-
-
 </div>
 <div class="container-fluid" id="backgroundImage">
     <div class="row">
-        <div class="col-6 mt-5" id="communication1">
-            <p class="info text-white line-height-1.5"><span class="font-weight-bold" id="title">Sarıyer-Kolektif House</span><br>
+        <div class="col-12 col-lg-6 mt-5" id="communication1">
+            <p class="info text-center text-lg-left text-white line-height-1.5"><span class="font-weight-bold" id="title">Sarıyer-Kolektif House</span><br>
                 Maslak Mah. Aos 55. Sk. 42 Maslak No: 4  İç Kapı No: 556<br>
                 info@codeck.com.tr<br>
                 +90 (212) 242 36 24</p>
-            <div class="buttons" style="display: flex;">
+            <div class="buttons d-flex justify-content-center justify-content-lg-start" style="display: flex;">
                 <div class="button pt-3 text-white" id="button1">Adres Tarifi Al</div>
                 <div class="button pt-3 ml-3 pl-5 text-white" id="button2">Hemen Ara</div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-6 mt-5" id="communication2">
-            <p class="info text-right text-white"><span class="font-weight-bold" id="title2">Sarıyer-Merkez</span><br>
-                Yeni mahalle caddesi, No. 9,Kat 3,Daire 3<br>
-                info@codeck.com.tr<br>
-                +90 (544) 565 18 85</p>
-            <div class="buttons d-flex justify-content-end " style="display: flex;">
-                <div class="button text-white " id="button3">Adres Tarifi Al</div>
-                <div class="button ml-3 pl-5  text-white" id="button4">Hemen Ara</div>
+        <div class="row">
+            <div class="col-12 col-lg-6  mt-5" id="communication2">
+                <p class="info text-center text-lg-right text-white"><span class="font-weight-bold" id="title2">Sarıyer-Merkez</span><br>
+                    Yeni mahalle caddesi, No. 9,Kat 3,Daire 3<br>
+                    info@codeck.com.tr<br>
+                    +90 (544) 565 18 85</p>
+                <div class="buttons d-flex justify-content-lg-end justify-content-center " style="display: flex;">
+                    <div class="button text-white " id="button3">Adres Tarifi Al</div>
+                    <div class="button ml-3 pl-5 text-white" id="button4">Hemen Ara</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-{% endblock %}
+
+
+    {% endblock %}
