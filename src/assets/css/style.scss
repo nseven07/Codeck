@@ -1,0 +1,123 @@
+#title-text {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  font-family: Roboto;}
+
+#title-text-span {
+  color: #E22000; }
+
+#button {
+  width: 300px;
+  height: 60px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 50px;
+  border-radius: 30px; }
+
+#buttonText {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 18px; }
+
+.button-inner {
+  width: 50px;
+  position: relative;
+  height: 50px;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  background: #fff; }
+
+#backgroundImage {
+  background-size: cover;
+  background-image: url(../img/background.png);
+  position: absolute;
+  width: 100%;
+  background-position: center;
+  height: 100%; }
+
+#boyColumn {
+  height: 45%;
+  right: 0; }
+
+#boyImage {
+  max-width: 32%;
+  max-height: 450px;
+  right: 0;
+  bottom: 0;
+  position: absolute; }
+
+.button-img {
+  position: relative;
+  top: 11px;
+  left: 13px; }
+
+a:hover {
+  text-decoration: none; }
+
+.info {
+
+
+  font-size: 20px; }
+
+.button {
+  background: rgba(255, 255, 255, 0.3);
+  width: 200px;
+  height: 64px;
+  border-radius: 16px;
+  padding: 16px 0 0 38px;
+
+  font-size: 19px; }
+
+#button2 {
+  width: 190px; }
+
+
+
+#button4 {
+  width: 190px; }
+#emptyLine{
+  height: 50px;
+  background:white;
+}
+#communication1{
+  position: absolute;
+  top: 8%;
+}
+#communication2{
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+#bottomColor{
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  background: #D11E00;
+}
+.stick{
+  height: 50px;
+  width: 2px;
+  background: #fff;
+}
+.comInfo{
+  font-size: 18px;
+  color: #fff;
+
+}
+.main{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+}
+@media screen and (min-width: 1500px)
+{
+ .info{
+   font-size: 30px;
+ }
+
+
+}
