@@ -4,12 +4,14 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
+    "dev": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Necip Seven",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.7.4",
+    "clean-css": "^4.1.11",
     "cssnano": "^4.1.10",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
@@ -22,14 +24,13 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-twig": "^1.2.0",
     "gulp-uglify-es": "^2.0.0",
-    "i": "^0.3.6",
-    "postcss": "^7.0.26",
-    "clean-css": "^4.1.11",
-    "lodash.template": "^4.5.0"
+    "postcss": "^7.0.26"
   },
   "devDependencies": {
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cssmin": "^0.2.0",
-    "gulp-header": "^2.0.9"
+    "gulp-header": "^2.0.9",
+    "gulp-imagemin": "^7.1.0"
   }
 }
