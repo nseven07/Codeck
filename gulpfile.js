@@ -40,6 +40,7 @@ function compile() {
             base: './src/templates'
         }))
         .pipe(gulp.dest(dist + '/templates/'))
+        .pipe(connect.reload());
 }
 
 function connectGulp() {
@@ -76,6 +77,7 @@ function style() {
 
 function watchMyStyles() {
     gulp.watch(['./src/assets/css/*.scss'], style);
+    gulp.watch(['./src/templates/**/*.html'], compile)
 }
 
 const build = gulp.parallel(gulp.series(clean, style, copyImages, copyIcons, compile, connectGulp), watchMyStyles);

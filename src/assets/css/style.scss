@@ -9,6 +9,7 @@
   color: #E22000;
   padding: 0 12px;
 }
+
 .mediaIcons {
   margin: 0 5px;
 }
@@ -54,6 +55,7 @@
   width: 100%;
   background-position: center;
   height: 100%;
+  padding: 60px 0;
 }
 
 #boyColumn {
@@ -101,19 +103,6 @@ a:hover {
 #emptyLine {
   height: 100px;
   background: white;
-}
-
-#communication1 {
-  position: absolute;
-  top: 8%;
-  padding: 0 80px;
-}
-
-#communication2 {
-  position: absolute;
-  right: 0;
-  bottom: 10%;
-  padding: 0 80px;
 }
 
 #redRowitems {
