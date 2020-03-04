@@ -16,7 +16,7 @@
   background: #E22000;
   position: relative;
   display: flex;
-  justify-content: flex-end}
+  justify-content: flex-end; }
 
 #button {
   width: 300px;
@@ -108,7 +108,7 @@ a:hover {
   justify-content: space-between; }
 
 #mainContentinner {
-  padding: 80px 80px 0 80px; }
+  padding: 50px 80px 0 80px; }
 
 #bottomColor {
   height: 10%;
@@ -159,10 +159,10 @@ a:hover {
   #codeckimg {
     min-width: 180px; }
   #textitem1 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0; }
   #textitem2 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0; }
   #title-text-span {
     color: #E22000;
@@ -198,5 +198,12 @@ a:hover {
     padding: 50px 50px 0 50px; }
   #redRow {
     height: 250px;
-    justify-content: center
-  } }
+    justify-content: center; }
+  #textitem3{
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+
+}
