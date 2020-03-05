@@ -58,6 +58,12 @@ function copyImages(){
         .src(['./src/assets/img/**/*'])
         .pipe(gulp.dest('./dist/assets/img/'))
 }
+function copyIcons() {
+    return gulp
+        .src(['./src/assets/icons/**/*'])
+        //.pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5, svgoPlugins: [{removeViewBox: true}]}))
+        .pipe(gulp.dest(dist + '/assets/icons/'))
+}
 
 function style() {
     return gulp.src('./src/assets/css/*.scss')
@@ -67,7 +73,7 @@ function style() {
 }
 
 
-const build = gulp.series(clean, copyImages,style, compile);
+const build = gulp.series(clean, copyImages,style, compile,copyIcons);
 
 
 exports.clean = clean;
@@ -76,3 +82,4 @@ exports.compile = compile;
 exports.build = build;
 exports.default = build;
 exports.style = style;
+exports.copyIcons = copyIcons;
