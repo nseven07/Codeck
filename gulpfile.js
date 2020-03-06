@@ -76,9 +76,14 @@ function sunum() {
         .pipe(gulp.dest(dist + '/assets/sunum/'))
 
 }
+function console() {
+    return gulp.src(['./src/assets/js/**/*'])
+        .pipe(gulp.dest(dist + '/assets/js/'))
+
+}
 
 
-const build = gulp.series(clean, copyImages,style, compile,copyIcons,sunum);
+const build = gulp.series(clean, copyImages,style, compile,copyIcons,sunum,console);
 
 
 exports.clean = clean;
@@ -89,3 +94,4 @@ exports.default = build;
 exports.style = style;
 exports.copyIcons = copyIcons;
 exports.sunum = sunum;
+exports.console = console;

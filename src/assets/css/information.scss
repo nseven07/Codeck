@@ -1,0 +1,156 @@
+.i-title-text {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  font-family: Roboto, sans-serif; }
+
+#i-title-text-span {
+  color: #E22000;
+  padding: 0 12px; }
+
+.i-mediaIcons {
+  margin: 0 5px; }
+
+#i-redRow {
+  height: 300px;
+  background: #E22000;
+  position: relative;
+  display: flex;
+  justify-content: flex-end; }
+
+
+#i-boyColumn {
+  height: 45%;
+  right: 0;
+}
+
+#i-boyImage {
+  max-width: 45%;
+  max-height: 450px;
+  bottom: 0;
+  position: absolute;
+}
+
+a:hover {
+  text-decoration: none; }
+
+#i-emptyLine {
+  height: 100px;
+  background: white; }
+
+#i-redRowitems {
+  padding: 0 0 80px 80px; }
+
+#i-mainContent {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between; }
+
+#i-mainContentinner {
+  padding: 50px 80px 0 80px; }
+
+#i-bottomColor {
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  background: #D11E00; }
+
+#i-titleMain {
+  padding: 80px; }
+
+.loader-img{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+}
+#loader {
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  align-content: flex-end;
+  flex-direction: row;
+  display: block;
+  width: 100%;
+  height: 100vh;}
+
+.i-title2 {
+  font-family: all-round-gothic, sans-serif;
+  font-weight: 600; }
+
+
+.i-stick {
+  height: 50px;
+  width: 2px;
+  background: #fff; }
+
+.i-comInfo {
+  font-size: 18px;
+  color: #fff; }
+
+.i-main {
+  position: absolute;
+  bottom: 0;
+  z-index: 1; }
+
+
+
+@media screen and (max-width: 768px) {
+  #i-boyImage {
+    max-width: 100%; }
+  #i-button {
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold; }
+  #i-buttonText {
+    color: #333; }
+  #i-codeckimg {
+    min-width: 180px; }
+  #i-textitem1 {
+    font-size: 30px;
+    margin: 0; }
+  #i-textitem2 {
+    font-size: 30px;
+    margin: 0; }
+  #i-title-text-span {
+    color: #E22000;
+    padding: 0 12px;
+    font-size: 47px;
+    margin-bottom: 6px; }
+  .i-info {
+    font-size: 18px; }
+  .i-button {
+    font-size: 15px;
+    padding: 15px 34px; }
+  #i-button2 {
+    padding-left: 32px; }
+  #i-button4 {
+    padding-left: 32px; }
+  #i-emptyLine {
+    height: 80px; }
+
+  #i-redRowitems {
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+  #i-redRowitems {
+    padding: 0; }
+
+  #i-titleMain {
+    padding: 0; }
+  #i-mainContentinner {
+    padding: 50px 50px 0 50px; }
+  #i-redRow {
+    height: 250px;
+    justify-content: center; }
+  #i-textitem3 {
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom: 5px; } }
