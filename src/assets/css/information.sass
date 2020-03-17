@@ -1,0 +1,483 @@
+$primary-font: All Round Gothic, sans-serif
+$secondary-font: Roboto, sans-serif
+$primary-color: #E22000
+$secondary-color: #7C7C7C
+$tertiary-color: #030303
+
+@font-face
+  font-family: 'All Round Gothic'
+  src: url(../../assets/font/allroundgothic-book-webfont.woff2) format('woff2'),
+  url(../../assets/font/allroundgothic-book-webfont.woff) format('woff')
+  font-weight: normal
+  font-style: normal
+
+nav, .content
+  padding: 20px 80px 0 80px
+
+.main
+  position: absolute
+  bottom: 0
+  z-index: 1
+
+.headTextRight
+  flex: 5
+  display: flex
+  text-align: right
+  align-items: center
+  font-weight: 100
+
+.title
+  font-family: $primary-font
+  font-size: 24px
+
+.subtitle
+  font-family: $secondary-font
+  font-size: 38px
+  font-weight: 100
+  color: $secondary-color
+
+.description
+  font-family: $secondary-font
+  color: $secondary-color
+  font-size: 18px
+  font-weight: 300
+  text-align: right
+  line-height: 40px
+
+b.descriptive
+  font-weight: 800
+  color: $primary-color !important
+
+.mediaIcons
+  margin: 0 5px
+
+.button, #button
+  transition: 0.8s cubic-bezier(0, 0.38, 0, 1)
+
+.button:hover
+  background-color: $primary-color
+  color: white
+  transform: scale(1.2) translate(20px, 0)
+  margin-right: 40px
+
+#redRow
+  height: 300px
+  background: $primary-color
+  position: relative
+  display: flex
+  justify-content: flex-end
+
+#button
+  width: 60px
+  height: 60px
+  display: flex
+  background: rgba(255, 255, 255, 0.3)
+  margin-top: 50px
+  border-radius: 30px
+
+#buttonText
+  color: #fff
+  text-align: center
+  font-family: $secondary-font
+  font-size: 18px
+
+.button-inner
+  width: 50px
+  position: relative
+  height: 50px
+  top: 5px
+  left: 5px
+  border-radius: 50%
+  background: #fff
+
+.text-area
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+  justify-content: center
+
+.headText
+  font-weight: 100
+    margin: 0
+    font-size: 35px
+
+#headTextSpecial
+  flex: 5
+  padding-right: 150px
+
+#backgroundImage
+  background-size: cover
+  background-image: url(../img/communication/background.png)
+  position: absolute
+  width: 100%
+  background-position: center
+  height: 100%
+
+#boyColumn
+  height: 45%
+  right: 0
+
+#boyImage
+  max-width: 45%
+  max-height: 400px
+  bottom: 0
+  position: absolute
+
+.button-img
+  position: relative
+  top: 6px
+  left: 5px
+
+a:hover
+  text-decoration: none
+  color: unset
+
+.info
+  font-size: 20px
+  font-weight: 200
+
+.button
+  background: rgba(255, 255, 255, 0.3)
+  border-radius: 10px
+  padding: 20px 40px
+  font-size: 19px
+
+#button2, #button4
+  width: 190px
+
+#emptyLine
+  height: 100px
+  background: white
+
+#communication1
+  position: absolute
+  top: 8%
+  padding: 0 80px
+
+#communication2
+  position: absolute
+  right: 0
+  bottom: 10%
+  padding: 0 80px
+
+#redRowitems
+  padding: 0 0 80px 80px
+
+#mainContent
+  display: flex
+  flex-direction: column
+  height: 100vh
+  justify-content: space-between
+
+a:hover
+  text-decoration: none
+  color: unset
+
+#bottomColor
+  height: 10%
+  position: absolute
+  bottom: 0
+  background: #D11E00
+
+#titleMain
+  padding: 80px
+
+.loader-img
+  position: absolute
+  margin: auto
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 30vw
+  height: auto
+
+#loader
+  background: #fff
+  position: absolute
+  z-index: 2
+  align-content: flex-end
+  flex-direction: row
+  display: block
+  width: 100%
+  height: 100vh
+
+.stick
+  height: 50px
+  width: 2px
+  background: #fff
+
+.staff
+  justify-content: flex-end
+  height: 310px
+  padding: 0
+  align-items: center
+
+.ourCrew
+  display: flex
+  justify-content: flex-start
+  padding: 130px 80px
+
+.comInfo
+  font-size: 18px
+  color: #fff
+
+.main
+  position: absolute
+  bottom: 0
+  z-index: 1
+
+.callToAction
+  display: flex
+  flex-direction: column
+
+  span
+    font-size: 58px
+    line-height: 68px
+    font-weight: 700
+    text-align: center
+    color: $tertiary-color
+    margin: 0 0 30px 0
+    padding: 0
+
+  a
+    text-align: center
+    color: #030303
+    display: flex
+    flex-direction: column
+    margin: 0 0 30px 0
+
+.images
+  max-height: 55%
+
+.text-block
+  display: flex
+  flex-direction: column
+  align-content: center
+  padding: 0
+  justify-content: center
+
+.text
+  padding-right: 50px
+  font-size: 36px
+  font-weight: 300
+  line-height: 48px
+
+.logo-content
+  display: flex
+  padding: 130px 80px
+
+.digital-experience
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 130px 80px
+
+.digital-text
+  font-size: 28px
+  font-family: $primary-font
+  text-align: center
+
+.headTextSpan
+  color: $primary-color
+  font-weight: bold
+
+.digital-images
+  width: 100%
+
+.footer
+  background-color: $primary-color
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 10px
+
+.pages
+  list-style: none
+  display: flex
+  margin: 8px 0
+  padding: 0 30px
+
+.page-items
+  color: #ffffff
+  font-size: 13px
+  padding-right: 20px
+
+.privacy
+  color: #ffffff
+  padding: 0 30px
+  font-size: 14px
+
+.linkimages
+  padding: 0 5px
+
+.social-media
+  padding-right: 40px
+
+.hamburger-menu
+  width: 40px
+  height: 4px
+  background-color: $primary-color
+
+#hamburgerMenu
+  width: 20px
+
+@media (max-width: 576px)
+  .description
+    text-align: left
+    margin-top: 40px
+
+@media screen and (max-width: 768px)
+  body
+    overflow-x: hidden !important
+
+  nav, .content
+    padding: 20px 40px 0 40px
+
+  .subtitle
+    font-size: 24px
+
+  .description
+    font-size: 14px
+
+  .digital-text
+    font-size: 20px
+
+  #boyImage
+    max-width: 100%
+
+  #button
+    position: absolute
+    z-index: 1
+    bottom: 5%
+    background-color: rgba(255, 255, 255, 0.8)
+    font-weight: bold
+
+  #buttonText
+    color: #333
+
+  #codeckimg
+    min-width: 180px
+
+  .info
+    font-size: 18px
+
+  .social-media
+    padding: 0
+
+  .pages
+    padding: 0
+    text-align: center
+
+  .button
+    font-size: 15px
+    padding: 15px 34px
+
+  #button2, #button4
+    padding-left: 32px
+
+  #emptyLine
+    height: 80px
+
+  #communication1
+    padding: 0
+    top: 4%
+
+  #redRowitems
+    display: flex
+    justify-content: center
+    padding: 0
+
+
+  #communication2
+    padding: 0
+    bottom: 9%
+
+  .logo-content
+    padding: 50px 40px
+
+  .page-items
+    padding: 0
+
+  #redRow
+    height: 250px
+    justify-content: center
+
+
+  #textitem3
+    font-size: 30px
+    padding-left: 10px
+    margin-bottom: 5px
+
+  .title-text
+    font-weight: bold
+    text-align: center
+    font-size: 40px
+    line-height: 100%
+    display: flex
+    flex-direction: column
+    font-family: $secondary-font
+    padding: 50px
+
+  #headTextSpecial
+    padding: 0
+
+  .headTextRight
+    flex: 12
+    display: flex
+    text-align: left
+    align-items: center
+    font-weight: 100
+    padding: 15px 15px 25% 15px
+
+  #mainContent
+    height: unset
+    justify-content: unset
+
+
+  .digital-experience
+    padding: 50px 40px
+    .title, .subtitle
+      text-align: left!important
+
+  .imageandtext
+    margin-top: 50pt
+
+  .images
+    max-height: 230px
+
+  .imagesMain
+    margin-top: 40px
+
+  .staff
+    justify-content: flex-end
+    height: 310px
+    padding: unset
+    align-items: center
+    flex-direction: column
+
+  .text-area
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    padding: 22px
+    justify-content: center
+
+  .bottomText
+    font-size: 27px
+
+  .footer
+    display: flex
+    flex-direction: column
+
+
+@media screen and (max-width: 1200px)
+  .info
+    font-size: 30px
+
+  .digital-text
+    font-size: 18px
+
+  .headTextRight
+    align-items: flex-end
+

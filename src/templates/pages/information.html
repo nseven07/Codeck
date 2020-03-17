@@ -1,43 +1,141 @@
 {% extends "layouts/layout.index.html" %}
 {% block content %}
 
-<div id="loader">
-    <img class="loader-img" src="../assets/img/information/ezgif-3-c10ad3de5c54.gif"/>
-</div>
-<div class="container-fluid" id="i-mainContent">
-    <div class="row" id="mainContentinner">
-        <div class="col-12 col-md-10 col-lg-10 d-md-block d-flex justify-content-center  ">
-            <img id="codeckimg" src="../assets/img/information/codeck.svg" alt="">
-        </div>
-        <div class="col-12 col-md-2 col-lg-2 d-flex justify-content-center justify-content-md-end ">
 
-            <a target="_blank" href="" style="display:none;"><img class="i-mediaIcons" src="../assets/img/information/facebook.svg" alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/codeckistanbul/"><img class="i-mediaIcons" src="../assets/img/information/instagram.svg" alt=""></a>
-            <a target="_blank" href="https://www.linkedin.com/company/codeck/about/"><img class="i-mediaIcons" src="../assets/img/information/linkedin.svg" alt=""></a>
+<div id="loader">
+    <img class="loader-img" src="./assets/img/ezgif-3-c10ad3de5c54.gif" alt="">
+</div>
+<div class="container-fluid" id="mainContent">
+
+    <div class="row content">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h4 class="title text-left">Biz Kimiz?</h4>
+            <p class="subtitle text-left" id="subtitleSpecial" style="">Hayalleri tasarlayan,<br> Web teknolojileri
+                geliştiren,<br> Heyecan dolu <br><b class="descriptive">Bir ekibiz!</b>
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                tempor
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
         </div>
     </div>
-    <div class="row" id="i-titleMain">
-        <div class="i-title-text col-12 col-md-12 text-center text-md-left d-flex flex-row justify-content-center d-md-block">
-            <p id="i-textitem1" style="">Çalışıyoruz,</p><p class="d-md-none d-block" id="i-textitem3">Hazırlanıyoruz,</p>
-        </div>
-        <div class="i-title-text col-12 col-md-12 text-center text-lg-left d-flex flex-column flex-md-row" style="">
-            <p class="d-none d-md-block">Hazırlanıyoruz,</p> <span id="i-title-text-span">En İyisi İle</span><p id="i-textitem2">Döneceğiz.</p>
-        </div>
-    </div>
-    <div class="row" id="i-redRow">
-        <div class="col-12" id="i-redRowitems">
-            <a href="../assets/sunum/codeck-sunum.pdf" title="Codeck Sunum"  target="_blank" id="i-button">
-                <div class="i-button-inner">
-                    <img class="i-button-img" src="../assets/img/information/left-arrow.svg" alt="">
+    <div class="row" id="redRow">
+        <div class="col-12" id="redRowitems">
+            <a href="" target="_blank" id="button">
+                <div class="button-inner">
+                    <img class="button-img" src="./assets/img/left-arrow.svg" alt="">
                 </div>
             </a>
-            <div class="i-main d-none d-lg-block ">
-                <p class="i-comInfo">İLETİŞİM BİLGİLERİMİZ</p>
-                <div class="i-stick"></div>
+            <div class="main d-none d-lg-block ">
+                <p class="comInfo">DAHA FAZLA BİLGİ</p>
+                <div class="stick"></div>
             </div>
         </div>
-        <div class="container-fluid" id="i-bottomColor"></div>
-        <img id="i-boyImage" src="../assets/img/information/boyimg2.png" alt=""></div>
+        <div class="container-fluid" id="bottomColor"></div>
+        <img id="boyImage" src="./assets/img/boyimg2.png" alt=""></div>
+
 </div>
+<div class="logo-content flex-column flex-md-row">
+    <div class="text-block col-12 col-md-4 d-flex flex-column">
+        <h4 class="title">Müşterilerimiz</h4>
+        <p class="subtitle">Birlikte çalışmaktan onur ve mutluluk duyduğumuz müşterilerimiz.</p></div>
+    <div class="main-logo-block-mb ">
+        <img class="col-12 d-block d-md-none" src="./assets/img/brands/medyas.svg" alt="">
+
+    </div>
+    <div class="main-logo-block col-8 d-none d-md-block">
+        <div class="logo-block row ">
+            <img class="col-3" src="./assets/img/brands/medyas.svg" alt="">
+            <img class="col-3" src="./assets/img/brands/hamidiye.svg" alt="">
+            <img class="col-3" src="./assets/img/brands/amvg.svg" alt="">
+            <img class="col-3" src="./assets/img/brands/podbia.svg" alt="">
+
+        </div>
+        <div class="logo-block2 row">
+            <img class="col-3" src="./assets/img/brands/bmsumer.png" alt="">
+            <img class="col-3" src="./assets/img/brands/akilliahtapot.svg" alt="">
+            <img class="col-3" src="./assets/img/brands/pryapim.svg" alt="">
+            <img class="col-3" src="./assets/img/brands/kafeinbox.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="digital-experience">
+    <div class="text-block2">
+        <h4 class="title text-center">Dijital Deneyim</h4>
+        <p class="subtitle text-center">Son teknoloji ve tasarım yaklaşımlarını kullanan yenilikçi ekibimizle
+            sunduğumuz hizmetler.</p>
+    </div>
+    <div class="imagesMain d-flex flex-column flex-md-row">
+        <div class="imageandtext col-12 col-md-3">
+            <img class="digital-images" src="./assets/img/image1@2x.png" alt="">
+            <p class="digital-text">Web ve Mobil Tasarım Hizmetleri</p>
+        </div>
+        <div class="imageandtext col-12 col-md-3">
+            <img class="digital-images" src="./assets/img/image2@2x.png" alt="">
+            <p class="digital-text">Backend Geliştirme Hizmetleri</p>
+        </div>
+        <div class="imageandtext col-12 col-md-3">
+            <img class="digital-images" src="./assets/img/image3@2x.png" alt="">
+            <p class="digital-text">Grafik Tasarım Hizmetleri</p>
+        </div>
+        <div class="imageandtext col-12 col-md-3">
+            <img class="digital-images" src="./assets/img/image4@2x.png" alt="">
+            <p class="digital-text">Sunucu Yönetimi ve Bakım Hizmetleri</p>
+        </div>
+    </div>
+</div>
+<div class="ourCrew">
+    <div class="text-area">
+        <h4 class="title">Ekibimiz</h4>
+        <p class="subtitle">Dijital dünyamızı daha yaşanabilir hale getirmek için yarışan ekibimiz;</p></div>
+    <div class="staff-md col-12 d-flex d-md-none">
+        <img class="images" src="./assets/img/personals/Cagdas@2x.png" alt="">
+        <img class="images" src="./assets/img/personals/Melek@2x.png" alt="">
+        <img class="images" src=./assets/img/personals/Samed@2x.png" alt="">
+    </div>
+
+    <div class="staff col-8 d-none d-md-flex">
+        <img class="images" src="./assets/img/personals/Cagdas@2x.png" alt="">
+        <img class="images" src="./assets/img/personals/Melek@2x.png" alt="">
+        <img class="images" src="./assets/img/personals/Samed@2x.png" alt="">
+    </div>
+</div>
+<div class="callToAction">
+    <span><b class="descriptive">Çekinme!</b> Bir şeyler sormak <br>istersen eğer</span>
+    <a href="">Bize buradan ulaşabilirsin
+        <img src="./assets/img/arrow-right.svg" alt=""></a>
+</div>
+<div class="footer">
+
+    <div class="social-media d-flex d-md-none">
+        <a href="" class="linkimages"><img src="./assets/img/facebook.svg" alt=""></a>
+        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img src="./assets/img/instagram.svg"
+                                                                                    alt=""></a>
+        <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
+                src="./assets/img/linkedin.svg"
+                alt=""></a>
+    </div>
+    <ul class="pages flex-column flex-md-row">
+        <li><a href="" class="page-items">Hakkımızda</a></li>
+        <li><a href="" class="page-items">Projlerimiz</a></li>
+        <li><a href="" class="page-items">İletişim</a></li>
+        <li><a href="" class="page-items">Blog</a></li>
+    </ul>
+    <div class="social-media d-none d-md-flex">
+        <a href="" class="linkimages"><img src="./assets/img/facebook.svg" alt=""></a>
+        <a href="https://www.instagram.com/codeckistanbul/" class="linkimages"><img src="./assets/img/instagram.svg"
+                                                                                    alt=""></a>
+        <a href="https://www.linkedin.com/company/codeck/about/" class="linkimages"><img
+                src="./assets/img/linkedin.svg"
+                alt=""></a>
+    </div>
+    <div class="privacy">© 2020 Codeck Tüm Hakları Saklıdır</div>
+
+</div>
+
 
 {% endblock %}
