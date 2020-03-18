@@ -29,6 +29,7 @@ const icons = 'assets/icons/';
 
 const sourceJs = [
     nodeModules + 'jquery/dist/jquery.js',
+    nodeModules + 'wowjs/dist/wow.min.js',
     nodeModules + 'bootstrap/dist/js/bootstrap.js',
     nodeModules + 'slick-carousel/slick/slick.js',
     homePath + 'js/main.js',
@@ -36,8 +37,6 @@ const sourceJs = [
 ];
 
 const sourceSass = [
-    nodeModules + "bootstrap/scss/bootstrap.scss",
-    nodeModules + "slick-carousel/slick/slick.scss",
     homePath + "css/style.sass"
 ];
 
@@ -81,23 +80,18 @@ function clean() {
     return del([dist + '**', '!' + dist])
 }
 
-function copyImages() {
+function copyFiles() {
     return gulp
-        .src(['./src/assets/img/**/*'])
-        //.pipe(imagemin())
-        .pipe(gulp.dest(dist + '/assets/img/'))
-}
-
-function copyIcons() {
-    return gulp
-        .src(['./src/assets/icons/**/*'])
+        .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/font/**/*'], {base: './src/'})
         //.pipe(imagemin({interlaced: true, progressive: true, optimizationLevel: 5, svgoPlugins: [{removeViewBox: true}]}))
-        .pipe(gulp.dest(dist + 'assets/icons/'))
+        .pipe(gulp.dest(dist))
 }
 
 function style() {
     return gulp.src(sourceSass)
-        .pipe(gsass())
+        .pipe(gsass({
+            includePaths: ['node_modules']
+        }))
         .pipe(gulp.dest(dist + 'assets/css'))
         .pipe(connect.reload());
 }
@@ -108,14 +102,13 @@ function myWatchTasks() {
     gulp.watch(['./src/templates/**/*.html'], compile)
 }
 
-const dev = gulp.parallel(gulp.series(clean, style, copyImages, copyIcons, scriptsDev, compile, connectGulp), myWatchTasks);
-const build = gulp.series(clean, style, copyImages, copyIcons, scripts, compile,);
+const dev = gulp.parallel(gulp.series(clean, style, copyFiles, scriptsDev, compile, connectGulp), myWatchTasks);
+const build = gulp.series(clean, style, copyFiles, scripts, compile,);
 
 
 exports.clean = clean;
-exports.copyImages = copyImages;
+exports.copyFiles = copyFiles;
 exports.compile = compile;
-exports.copyIcons = copyIcons;
 exports.build = build;
 exports.default = dev;
 exports.dev = dev;

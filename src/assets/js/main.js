@@ -8,9 +8,12 @@ function showPage() {
     document.getElementById("visible").style.overflow = "auto";
 }
 
-
-
-
-
-
-
+$(document).ready(function () {
+    $('.staff').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+        speed: 300,
+    })
+});
