@@ -31,7 +31,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-twig": "^1.2.0",
     "gulp-uglify-es": "^2.0.0",
-    "postcss": "^7.0.26",
+    "postcss": "^7.0.36",
     "minimist": ">=1.2.2",
     "wowjs": "^1.1.3"
   }
